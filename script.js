@@ -1,6 +1,5 @@
 let users_list = document.getElementById("users")
 let posts_list = document.getElementById("posts")
-let names = Array()
 
 function getAllUsers(){
     let request = new XMLHttpRequest()
@@ -62,3 +61,4 @@ function userClicked(id, elm){
     }
     elm.classList.add("active")
 }
+
