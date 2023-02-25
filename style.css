@@ -1,0 +1,57 @@
+body{
+    background: linear-gradient(90deg, rgba(6,6,165,1) 0%, rgba(253,29,29,1) 100%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.users_list{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 10px 0;
+}
+.posts_list{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    min-height: 100vh;
+    background: #ddd;
+    padding: 10px 30px;
+}
+.active{
+    border: 4px solid #fa173d;
+}
+.user_bloc{
+    width: 95%;
+    border-radius: 30px;
+    background-color: #fff;
+    height: 60px;
+    margin: 10px 0;
+    box-shadow: 0px 5px 10px rgb(0 0 0 / 20%);
+    cursor: pointer;
+}
+.user_name{
+    margin: 5px 20px 0 20px;
+   
+}
+.user_email{
+    margin: 5px 20px;
+    font-weight: 600;
+}
+.post_bloc{
+    width: 100%;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 5px 3px 5px 3px rgb(56 52 52 / 30%);
+    margin: 10px 0;
+    min-height: 80px;
+}
+.post_title{
+    border-bottom: 1px solid #ccc;
+    margin: 10px 20px;
+}
+.post_body{
+    margin: 10px 20px;
+}
