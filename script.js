@@ -4,7 +4,11 @@ let posts_list = document.getElementById("posts")
 function getAllUsers(){
 
     fetch('https://jsonplaceholder.typicode.com/users')
-        .then((response) => response.json())
+        .then((response) =>{
+            if(response.ok){
+                return response.json()
+            }
+        })
         .then((users) => {
             for (user of users) {
                 users_list.innerHTML += `<div class="user_bloc" id="user_${user.id}" onclick="userClicked(${user.id}, this)">
@@ -21,7 +25,11 @@ getAllUsers()
 function getPostsByUser(userId) {
 
     fetch('https://jsonplaceholder.typicode.com/posts?userId='+userId)
-        .then((response) => response.json())
+        .then((response) =>{
+            if(response.ok){
+                return response.json()
+            }
+        })
         .then((posts) => {
             posts_list.innerHTML = ""
 
